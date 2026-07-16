@@ -94,6 +94,17 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
 .inv-note{background:rgba(255,190,245,0.07);border:1px solid rgba(255,190,245,0.25);border-radius:14px;padding:20px 24px;margin-top:28px;font-size:13px;color:rgba(255,255,255,0.7)}
 .inv-note strong{color:#FFBEF5}
 
+.contract-card{background:linear-gradient(135deg,rgba(102,96,180,0.14) 0%,rgba(18,19,37,0.7) 100%);border:1px solid rgba(102,96,180,0.35);border-radius:24px;padding:40px 44px}
+.contract-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.contract-icon{font-size:26px}
+.contract-title{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#FFBEF5}
+.contract-desc{font-size:14px;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:34px;max-width:700px}
+.contract-rows{display:flex;flex-direction:column}
+.contract-row{display:grid;grid-template-columns:160px 1fr;gap:24px;padding:20px 0;border-top:1px solid rgba(255,255,255,0.08);align-items:start}
+.contract-tag{display:inline-block;background:rgba(102,96,180,0.25);border:1px solid rgba(102,96,180,0.5);color:#FFBEF5;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:100px;white-space:nowrap;height:fit-content}
+.contract-text{font-size:14px;color:rgba(255,255,255,0.75);line-height:1.65}
+.contract-text strong{color:#fff}
+
 .timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0;position:relative}
 .timeline::before{content:'';position:absolute;top:27px;left:0;right:0;height:2px;background:linear-gradient(90deg,#6660B4,#FFBEF5);z-index:0}
 .ts{text-align:center;padding:0 14px;position:relative}
@@ -116,6 +127,8 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
   .roi-table{grid-template-columns:1fr}
   .timeline::before{display:none}
   .plan-card{padding:28px 20px}
+  .contract-card{padding:26px 22px}
+  .contract-row{grid-template-columns:1fr;gap:8px}
   .cta-section{padding:56px 20px}
   .roi-inner{padding:0 20px}
   .pc.rec{transform:none}
@@ -305,50 +318,50 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
   <div class="roi-inner">
     <div class="sec-badge">Retorno sobre Investimento</div>
     <h2 class="sec-title">Quanto a dgenny® <em>gera de saving</em></h2>
-    <p class="sec-desc" style="margin-bottom:0">Base de cálculo: R$ 150.000.000/ano em compras automatizáveis (10% do volume projetado para 2026, correspondente às requisições abaixo de R$ 10.000). Comparativo com Plano Scale — 6 Assistentes de IA.</p>
+    <p class="sec-desc" style="margin-bottom:0">Base de cálculo: R$ 150.000.000/ano em compras automatizáveis (10% do volume projetado para 2026, correspondente às requisições abaixo de R$ 10.000). Comparativo com o investimento total do plano — 3 Assistentes de IA.</p>
     <div class="roi-table">
       <div class="rc cons">
         <div class="rc-scenario">Cenário 1</div>
         <div class="rc-conv">2% de saving</div>
-        <div class="rc-roi">32x</div>
+        <div class="rc-roi">49x</div>
         <div class="rc-lbl">Retorno sobre o investimento — Ano 1</div>
         <div class="rc-rows">
           <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 250.000</span></div>
           <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 3.000.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Investimento Ano 1</span><span class="rc-rv">R$ 92.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Ganho líquido Ano 1</span><span class="rc-rv">R$ 2.908.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~11 dias</span></div>
+          <div class="rc-row"><span class="rc-rl">Investimento Ano 1</span><span class="rc-rv">R$ 60.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Ganho líquido Ano 1</span><span class="rc-rv">R$ 2.940.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~7 dias</span></div>
         </div>
       </div>
       <div class="rc real">
         <div class="rc-scenario">Cenário 2</div>
         <div class="rc-conv">4% de saving</div>
-        <div class="rc-roi" style="color:#6660B4">64x</div>
+        <div class="rc-roi" style="color:#6660B4">99x</div>
         <div class="rc-lbl">Retorno sobre o investimento — Ano 1</div>
         <div class="rc-rows">
           <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 500.000</span></div>
           <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 6.000.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Investimento Ano 1</span><span class="rc-rv">R$ 92.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Ganho líquido Ano 1</span><span class="rc-rv">R$ 5.908.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~6 dias</span></div>
+          <div class="rc-row"><span class="rc-rl">Investimento Ano 1</span><span class="rc-rv">R$ 60.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Ganho líquido Ano 1</span><span class="rc-rv">R$ 5.940.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~4 dias</span></div>
         </div>
       </div>
       <div class="rc proj">
         <div class="rc-scenario">Cenário 3</div>
         <div class="rc-conv">6% de saving</div>
-        <div class="rc-roi">97x</div>
+        <div class="rc-roi">149x</div>
         <div class="rc-lbl">Retorno sobre o investimento — Ano 1</div>
         <div class="rc-rows">
           <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 750.000</span></div>
           <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 9.000.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Investimento Ano 1</span><span class="rc-rv">R$ 92.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Ganho líquido Ano 1</span><span class="rc-rv">R$ 8.908.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~4 dias</span></div>
+          <div class="rc-row"><span class="rc-rl">Investimento Ano 1</span><span class="rc-rv">R$ 60.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Ganho líquido Ano 1</span><span class="rc-rv">R$ 8.940.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~2 dias</span></div>
         </div>
       </div>
     </div>
-    <p class="roi-note">* Retorno previsível, não garantido. Saving aplicado sobre o volume automatizável de R$ 150M/ano — gerado por maior competição entre fornecedores e negociação estruturada pela IA. Investimento Ano 1 (Plano Scale) = R$ 7.000 × 12 meses + R$ 8.000 de implantação = R$ 92.000. Ganhos de produtividade (40h/mês por comprador) não contabilizados.</p>
-    <div class="inv-note" style="margin-top:28px"><strong>Para colocar em perspectiva:</strong> o investimento Ano 1 do piloto recomendado (3 assistentes, R$ 66.000) é comparável ao custo de uma única contratação — mas opera 24/7, em paralelo, sobre múltiplas negociações, e escala conforme o volume acompanha a projeção de R$ 1,5 bilhão. E com payback contado em dias, o risco de caixa da decisão é mínimo.</div>
+    <p class="roi-note">* Retorno previsível, não garantido. Saving aplicado sobre o volume automatizável de R$ 150M/ano — gerado por maior competição entre fornecedores e negociação estruturada pela IA. Investimento Ano 1 = R$ 6.000 de implantação + 3 meses a R$ 3.000 + 9 meses a R$ 5.000 = R$ 60.000. Ganhos de produtividade (40h/mês por comprador) não contabilizados.</p>
+    <div class="inv-note" style="margin-top:28px"><strong>Para colocar em perspectiva:</strong> o investimento Ano 1 (R$ 60.000) é inferior ao custo de uma única contratação — mas opera 24/7, em paralelo, sobre múltiplas negociações, e escala conforme o volume acompanha a projeção de R$ 1,5 bilhão. Com payback contado em dias, o risco de caixa da decisão é mínimo.</div>
   </div>
 </section>
 
@@ -386,60 +399,76 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
 <!-- INVESTIMENTO -->
 <section class="section">
   <div class="sec-badge">Investimento</div>
-  <h2 class="sec-title">Comece pelo piloto,<br>escale com o <em>ritmo de crescimento</em></h2>
-  <p class="sec-desc">Planos dimensionados pela quantidade de assistentes de IA. Implantação é cobrança única — inclui configuração, integração SIENGE, treinamento e Hypercare de 90 dias.</p>
-  <div class="plans-grid">
-    <div class="pc rec">
-      <div class="ptag">Recomendado para o piloto</div>
-      <div class="pname">Plano Start</div>
-      <div class="pdesc">3 Assistentes de IA</div>
-      <div class="pprice">R$ 5.000</div>
-      <div class="pperiod">por mês · R$ 60.000/ano</div>
-      <ul class="pitems">
-        <li>3 Assistentes de IA dgenny®</li>
-        <li>18.000 conversas iniciadas/ano</li>
-        <li>WhatsApp Business oficial (Meta)</li>
-        <li>Integração SIENGE</li>
-        <li>Hypercare de 90 dias</li>
-        <li>Garantia de cancelamento sem multa</li>
-      </ul>
-      <div class="ptotal">Implantação: R$ 6.000<br>Ano 1 (com implantação): <strong>R$ 66.000</strong></div>
+  <h2 class="sec-title">Uma proposta,<br>pensada para <em>reduzir o risco</em></h2>
+  <p class="sec-desc">Plano único com 3 Assistentes de IA e mensalidade reduzida nos 3 primeiros meses, para acelerar a adoção sem pressionar o caixa.</p>
+  <div class="plan-card">
+    <div class="plan-title">3 Assistentes de IA dgenny®</div>
+    <div class="plan-features">
+      <div class="pf">
+        <div class="pf-icon">💬</div>
+        <div class="pf-text">
+          <strong>18.000 conversas iniciadas/ano</strong>
+          <span>Crédito anual do plano — WhatsApp Business oficial (Meta), integração SIENGE e Hypercare de 90 dias inclusos</span>
+        </div>
+      </div>
+      <div class="pf">
+        <div class="pf-icon">🚀</div>
+        <div class="pf-text">
+          <strong>3 primeiros meses: R$ 3.000/mês</strong>
+          <span>Mensalidade reduzida para os primeiros 90 dias de operação, dentro do período de Hypercare</span>
+        </div>
+      </div>
+      <div class="pf">
+        <div class="pf-icon">📅</div>
+        <div class="pf-text">
+          <strong>Do 4º ao 12º mês: R$ 5.000/mês</strong>
+          <span>Mensalidade cheia do contrato anual, a partir do 4º mês de operação</span>
+        </div>
+      </div>
+      <div class="pf">
+        <div class="pf-icon">🔧</div>
+        <div class="pf-text">
+          <strong>Implantação: R$ 6.000</strong>
+          <span>Cobrança única — configuração, integração SIENGE, cadastro de fornecedores e treinamento do time</span>
+        </div>
+      </div>
     </div>
-    <div class="pc">
-      <div class="ptag alt">Próximo passo</div>
-      <div class="pname">Plano Scale</div>
-      <div class="pdesc">6 Assistentes de IA</div>
-      <div class="pprice">R$ 7.000</div>
-      <div class="pperiod">por mês · R$ 84.000/ano</div>
-      <ul class="pitems">
-        <li>6 Assistentes de IA dgenny®</li>
-        <li>36.000 conversas iniciadas/ano</li>
-        <li>WhatsApp Business oficial (Meta)</li>
-        <li>Integração SIENGE</li>
-        <li>Prospecção e equalização automática</li>
-        <li>Hypercare de 90 dias</li>
-      </ul>
-      <div class="ptotal">Implantação: R$ 8.000<br>Ano 1 (com implantação): <strong>R$ 92.000</strong></div>
-    </div>
-    <div class="pc">
-      <div class="ptag alt">Cobertura total</div>
-      <div class="pname">Plano Enterprise</div>
-      <div class="pdesc">9 Assistentes de IA</div>
-      <div class="pprice">R$ 11.000</div>
-      <div class="pperiod">por mês · R$ 132.000/ano</div>
-      <ul class="pitems">
-        <li>9 Assistentes de IA dgenny®</li>
-        <li>54.000 conversas iniciadas/ano</li>
-        <li>WhatsApp Business oficial (Meta)</li>
-        <li>Integração SIENGE</li>
-        <li>Prospecção e equalização automática</li>
-        <li>Hypercare de 90 dias</li>
-      </ul>
-      <div class="ptotal">Implantação: R$ 12.000<br>Ano 1 (com implantação): <strong>R$ 144.000</strong></div>
+    <div style="margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <span style="font-family:'Montserrat',sans-serif;font-size:13px;color:rgba(255,255,255,0.55)">Investimento total Ano 1 (implantação + 12 meses)</span>
+      <span style="font-family:'Montserrat',sans-serif;font-size:28px;font-weight:800;color:#FFBEF5">R$ 60.000</span>
     </div>
   </div>
-  <div class="inv-note"><strong>Opção ainda mais enxuta:</strong> se o objetivo for reduzir ao máximo o investimento inicial, avaliamos também 2 Assistentes de IA por R$ 4.000/mês (implantação a confirmar) — cobrindo os compradores de maior volume de requisições enquanto o restante do time segue no fluxo atual.</div>
-  <div class="inv-note" style="margin-top:16px;border-color:rgba(255,190,245,0.4);background:rgba(255,190,245,0.07)"><strong>Garantia de baixo risco:</strong> contrato padrão de 12 meses, mas testável por 6 meses. Se a BDR utilizar no mínimo 70–80% das conversas contratadas (ex.: no piloto de 3 assistentes, 1.500 conversas/mês de crédito → mínimo de ~1.050 a 1.200/mês de uso) e não tiver resultado, pode cancelar sem multa contratual. O risco da decisão fica com a dgenny.</div>
+</section>
+
+<!-- GARANTIA -->
+<section class="section">
+  <div class="sec-badge">Garantia de Retorno</div>
+  <h2 class="sec-title">Contrato de <em>Produtividade</em></h2>
+  <div class="contract-card">
+    <div class="contract-head">
+      <div class="contract-icon">🛡️</div>
+      <div class="contract-title">Contrato de Produtividade</div>
+    </div>
+    <p class="contract-desc">Incluímos essa cláusula porque acreditamos — de verdade — nos resultados que a dgenny® entrega. Se a ferramenta está sendo usada, ela está gerando retorno. Um cliente que cresce com a plataforma não precisa de barreiras para ficar — precisa de resultado para querer continuar. Por isso, quanto mais a BDR usar a dgenny®, mais flexível é o compromisso contratual.</p>
+    <div class="contract-rows">
+      <div class="contract-row">
+        <span class="contract-tag">Compromisso</span>
+        <span class="contract-text">A BDR se compromete a utilizar no mínimo <strong>70% das conversas iniciadas</strong> do pacote contratado (18.000/ano) durante os <strong>6 primeiros meses</strong> de contrato.</span>
+      </div>
+      <div class="contract-row">
+        <span class="contract-tag">Benefício</span>
+        <span class="contract-text">Cumprido esse compromisso — uso de no mínimo 70% dos créditos nos 6 primeiros meses — a BDR pode <strong>cancelar o contrato a partir do 7º mês sem multa nenhuma</strong>.</span>
+      </div>
+      <div class="contract-row">
+        <span class="contract-tag">Condição</span>
+        <span class="contract-text">Caso o uso <strong>não atinja 70%</strong> das conversas iniciadas nos 6 primeiros meses, a multa rescisória permanece válida até o 12º mês do contrato.</span>
+      </div>
+      <div class="contract-row">
+        <span class="contract-tag">Multa</span>
+        <span class="contract-text"><strong>35% sobre o valor do contrato restante</strong> — calculada sobre os meses que faltam para completar os 12 meses de vigência, aplicável apenas se o compromisso de uso não for cumprido nos 6 primeiros meses.</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <div class="divider"></div>
